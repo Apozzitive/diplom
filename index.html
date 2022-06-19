@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <a href="/" class="header__logo">
+                <span>Data</span>Base
+            </a>
+            <nav class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item ">
+                        <a href="/" class="menu__link active">Учебник</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./pages/labs/lab-content.html" class="menu__link">Практика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./knowledgeTest.html" class="menu__link">Тест знаний</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__search">
+                    <input type="text" name="" class="search__txt" placeholder="" />
+                    <a class="search__btn" href="search.html"></a>
+                    <i class="fa fa__search" aria-hidden="true"></i>
+                </div>
+            </div>
+        </header>
+        <div class="line"></div>
+        <main class="main">
+            <div class="container">
+                <h1 class="main__title">Базы данных и системы управления базами данных</h1>
+                <form class="main__search" method="post" action="http://localhost:3500/search.html">
+
+                    <div class="main__search-left">
+                        <input class="main__search-txt search__input" id="main-search" required name="input"
+                            type="search" onsearch="window.location.href=`http://localhost:3500/search.html` "
+                            placeholder="Поиск по учебнику"></input>
+                    </div>
+                    <button class="main__search-btn search__button"
+                        onclick=`window.location.href="http://localhost:3500/search.html" ` id="main-search-btn"
+                        type="submit">Найти</button>
+                </form>
+                <section>
+                    <h2 class="main__content">Содержание</h2>
+                    <div class=dragscroll>
+                        <nav class="content__menu">
+                            <div class="content__menu-icon">
+                                <span></span>
+                            </div>
+                            <ol class="content__menu-list">
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_1"><span>Раздел
+                                            1</span><br>Основные концепции
+                                        организации
+                                        данных</a>
+                                </li>
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_2"><span>Раздел
+                                            2</span><br>Внутренняя
+                                        организация реляционных СУБД</a>
+                                </li>
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_3"><span>Раздел
+                                            3</span><br>Элементы языка
+                                        SQL</a>
+                                </li>
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_4"><span>Раздел
+                                            4</span><br>Архитектура
+                                        клиент-сервер
+                                        InterBase</a>
+                                </li>
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_5"><span>Раздел
+                                            5</span><br>Разработка приложения
+                                        для
+                                        работы с БД</a>
+                                </li>
+                                <li class="content__menu-item">
+                                    <a class="content__menu-link" href="#" data-goto=".page__section_6"><span>Раздел
+                                            6</span><br>Разработка приложений
+                                        на
+                                        основе веб-технологий</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+                <section class="page__section_1">
+                    <h3 class="main__chapters">Основные концепции организации данных</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-1-topic-1.html" class="main__chapter-link"><span>1.1</span>
+                                    Типовая
+                                    организация современной
+                                    СУБД</a>
+
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-1-topic-2.html" class="main__chapter-link"><span>1.2</span>
+                                    Ранние
+                                    подходы к организации
+                                    СУБД</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-1-topic-3.html" class="main__chapter-link"><span>1.3</span>
+                                    Реляционный подход к организации
+                                    БД <br>
+                                    Основные концепции и термины</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-1-topic-4.html" class="main__chapter-link"><span>1.4</span>
+                                    Базисные средства манипулирования реляционными данными</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-1-topic-5.html" class="main__chapter-link"><span>1.5</span>
+                                    Проектирование реляционных баз
+                                    данных<br> с использованием нормализации</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="page__section_2">
+                    <h3 class="main__chapters">Внутренняя
+                        организация реляционных СУБД</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-2-topic-1.html" class="main__chapter-link"><span>2.1</span>
+                                    Структуры внешней памяти, методы
+                                    организации индексов</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-2-topic-2.html" class="main__chapter-link"><span>2.2</span>
+                                    Управление транзакциями</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-2-topic-3.html" class="main__chapter-link"><span>2.3</span>
+                                    Сериализация транзакций</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-2-topic-4.html" class="main__chapter-link"><span>2.4</span>
+                                    Управление транзакциями,
+                                    сериализация транзакций</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-2-topic-5.html" class="main__chapter-link"><span>2.5</span>
+                                    Журнализация изменений БД</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="page__section_3">
+                    <h3 class="main__chapters">Элементы языка SQL</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-1.html" class="main__chapter-link"><span>3.1</span>
+                                    Функции и основные возможности
+                                    языка SQL</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-2.html" class="main__chapter-link"><span>3.2</span>
+                                    Выборка данных с использованием
+                                    предложения SELECT</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-3.html" class="main__chapter-link"><span>3.3</span>
+                                    Вложенные подзапросы</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-4.html" class="main__chapter-link"><span>3.4</span>
+                                    Манипулирование данными</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-5.html" class="main__chapter-link"><span>3.5</span> SQL
+                                    запросы и функции</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-6.html" class="main__chapter-link"><span>3.6</span> SQL
+                                    функции даты</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-7.html" class="main__chapter-link"><span>3.7</span> SQL
+                                    строковые функции</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-3-topic-8.html" class="main__chapter-link"><span>3.8</span>
+                                    Операции объединения JOIN</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="page__section_4">
+                    <h3 class="main__chapters">Архитектура клиент-сервер</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-1.html" class="main__chapter-link"><span>4.1</span>
+                                    Описание данных на основе SQL</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-2.html" class="main__chapter-link"><span>4.2</span>
+                                    Основные особенности архитектуры
+                                    клиент-сервер</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-3.html" class="main__chapter-link"><span>4.3</span>
+                                    Триггеры и хранимые процедуры</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-4.html" class="main__chapter-link"><span>4.4</span>
+                                    Работа с BLOB и функции,
+                                    определенные пользователем</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-5.html" class="main__chapter-link"><span>4.5</span>
+                                    Транзакции. Механизм
+                                    транзакций</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-4-topic-6.html" class="main__chapter-link"><span>4.6</span>
+                                    Описание данных на основе SQL.
+                                    Индексы. Создание, изменение индексов.</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="page__section_5">
+                    <h3 class="main__chapters">Разработка приложений для работы с БД</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-5-topic-1.html" class="main__chapter-link"><span>5.1</span>
+                                    Этапы создания приложения</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-5-topic-2.html" class="main__chapter-link"><span>5.2</span>
+                                    Технология dbExpress</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-5-topic-3.html" class="main__chapter-link"><span>5.3</span>
+                                    Механизмы доступа к данным.
+                                    Технология dbExpress</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="page__section_6">
+                    <h3 class="main__chapters">Разработка приложений на основе веб-технологий</h3>
+                    <div class="wrap">
+                        <ol class="chapters__list">
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-6-topic-1.html" class="main__chapter-link"><span>6.1</span>
+                                    PHP: базовые понятия языка</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-6-topic-2.html" class="main__chapter-link"><span>6.2</span>
+                                    Основы языка PHP.
+                                    Конфигурация</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-6-topic-3.html" class="main__chapter-link"><span>6.3</span>
+                                    Настройка файла PHP.ini</a>
+                            </li>
+                            <li class="main__chapter-item">
+                                <a href="./pages/section-6-topic-4.html" class="main__chapter-link"><span>6.4</span>
+                                    Функции для работы php с СУБД
+                                    MySQL</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__copyright">
+                    <p class="copyright-text">© 2022 Лисовский Кирилл</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/script.js"></script>
+    <script defer src="node_modules/dragscroll/dragscroll.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

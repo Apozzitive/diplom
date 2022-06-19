@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <a href="/" class="header__logo">
+                <span>Data</span>Base
+            </a>
+            <nav class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Учебник</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./pages/labs/lab-content.html" class="menu__link">Практика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./knowledgeTest.html" class="menu__link">Тест знаний</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header__search">
+                    <input type="text" name="" class="search__txt" placeholder="Искать в учебнике" />
+                    <a class="search__btn" href="#"></a>
+                    <i class="fa fa__search" aria-hidden="true"></i>
+                </div>
+                <button class="change__theme">
+                    <img src="img/dark_theme.png" alt="" class="dark">
+                </button>
+                <button class="change__theme">
+                    <img src="img/light_theme.png" alt="" class="lite">
+                </button>
+                <button class="header__login">
+                    <img src="img/log_in.png" alt="" class="login">
+                </button>
+            </div>
+        </header>
+        <div class="line"></div>
+        <main class="main">
+            <div class="container">
+                <h1 class="search__title">Результат поиска</h1>
+                <form class="form" method="post" action="http://localhost:3500/search.html">
+                    <input class="search__input" id="search-txt" onsearch='window.location.reload()' name="input"
+                        type="search">
+                    <button class="search__button" id="search-btn" onclick='window.location.reload()'>Найти</button>
+                </form>
+                <section class="search__results">
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__copyright">
+                    <p class="copyright-text">© 2022 Лисовский Кирилл</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script defer src="node_modules/dragscroll/dragscroll.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

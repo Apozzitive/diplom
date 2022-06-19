@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <a href="/" class="header__logo">
+                <span>Data</span>Base
+            </a>
+            <nav class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Учебник</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../pages/labs/lab-content.html" class="menu__link">Практика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../knowledgeTest.html" class="menu__link">Тест знаний</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="line"></div>
+        <div class="container">
+            <div class="hide-test">
+                <div class="breadcrumbs">
+                    <ul class="nav__tree">
+                        <li class="tree__item">
+                            <a class="tree__link" href="/">
+                                <img class="home" src="../img/book.png" alt="">
+                            </a>
+                        </li>
+                        <li class="tree__item">
+                            <a class="tree__link" style="cursor:default" href="">
+                                <img class="home" src="../img/right-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="tree__item">
+                            <a class="tree__link" href="../pages/section-3-content.html">Элементы языка SQL</a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="page__example">
+                    <div class="page__content">
+                        <a href="#" id="raw-switch" class="raw-switch">Raw: <span></span></a>
+                        <p class="post_14" id="markdown" contenteditable></p>
+                        <div class="test_output" id="output-html">
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script defer src="../app.js"></script>
+    <script defer src="../node_modules/dragscroll/dragscroll.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__copyright">
+            <p class="copyright-text">© 2022 Лисовский Кирилл</p>
+        </div>
+    </div>
+</footer>
+
+</html>
