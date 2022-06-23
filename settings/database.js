@@ -15,10 +15,10 @@ const pool = mysql.createPool({
     database: 'heroku_eda79bf60c6eb17',
 })
 
-pool.connect((error) => {
+/* connection.connect((error) => {
     if (error) {
         return console.log('-----DataBase not connected-----');
     } return console.log('-----DataBase Connected-----');
-})
+}) */
 
 module.exports = pool;
