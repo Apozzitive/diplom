@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {            // при го�
 });
 
 async function getResponseSearch() {
-    let res = await fetch('http://localhost:3500/search');
+    let res = await fetch('http://diplomggkttid.herokuapp.com/search');
     let searchContent = await res.json();
     console.log(searchContent.values);
     let valInp = '';

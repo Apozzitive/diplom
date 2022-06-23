@@ -1,7 +1,7 @@
 'use strict'
 
 async function getResponseLab() {
-    let response = await fetch('http://localhost:3500/labsbd');
+    let response = await fetch('http://diplomggkttid.herokuapp.com/labsbd');
     let content = await response.json();
 
     for (let i = 0; i <= content.values.length - 1; i++) {
