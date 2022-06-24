@@ -16,7 +16,7 @@ async function getResponseSearch() {
     let valInp = '';
     valInp = document.querySelector('.search__input').value;
     let valueInput = valInp.toLowerCase();
-    if (searchContent.values[0] === undefined || searchContent.values[0].topic_content !== valInp) {
+    if (searchContent.values[0] === undefined) {
         const notFound = "Ничего не найдено";
         const divSearchResult = document.createElement('div');
         divSearchResult.className = "search__result-result";
