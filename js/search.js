@@ -27,7 +27,7 @@ async function getResponseSearch() {
         resultElement.append(divSearchResult);
     } else {
         for (let i = 0; i <= searchContent.values.length - 1; i++) {
-            if (searchContent.values[i].topic_content !== valInp) {
+            if (searchContent.values[i].topic_content !== valueInput) {
                 const notFound = "Ничего не найдено";
                 const divSearchResult = document.createElement('div');
                 divSearchResult.className = "search__result-result";
