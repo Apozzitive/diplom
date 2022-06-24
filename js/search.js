@@ -36,6 +36,7 @@ async function getResponseSearch() {
                                     </div>`;
                 const resultElement = document.querySelector(".search__results");
                 resultElement.append(divSearchResult);
+                return;
             } else {
                 let title = searchContent.values[i].topic_title;
                 let link = "";
