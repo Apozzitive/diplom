@@ -329,6 +329,10 @@ body {
   padding-bottom: 7px;
 }
 
+.main__chapter-link:hover {
+  color: #FF0000;
+}
+
 .footer {
   padding: 0px 40px;
 }
