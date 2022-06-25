@@ -195,57 +195,6 @@ body {
   display: none;
 }
 
-@media (max-width: 767px) {
-  .menu__icon {
-    z-index: 5;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 18px;
-    cursor: pointer;
-  }
-
-  .menu__icon span,
-  .menu__icon::before,
-  .menu__icon::after {
-    left: 0;
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: #000;
-  }
-
-  .menu__icon::before,
-  .menu__icon::after {
-    content: "";
-  }
-
-  .menu__icon::before {
-    top: 0;
-  }
-
-  .menu__icon::after {
-    bottom: 0;
-  }
-
-  .menu__icon span {
-    top: 50%;
-    transform: scale(1) translate(0px, -50%);
-  }
-
-  .header__menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 100px 30px 30px 30px;
-    transition: left 0.3s ease 0s;
-  }
-
-}
 
 
 
@@ -462,7 +411,36 @@ body {
 }
 
 .lab_0,
-.lab_1 {
+.lab_1,
+.lab_2,
+.lab_3,
+.lab_4,
+.lab_5,
+.lab_6,
+.lab_7,
+.lab_8,
+.lab_9,
+.lab_10,
+.lab_11,
+.lab_12,
+.lab_13,
+.lab_14,
+.lab_15,
+.lab_16,
+.lab_17,
+.lab_18,
+.lab_19,
+.lab_20,
+.lab_21,
+.lab_22,
+.lab_23,
+.lab_24,
+.lab_25,
+.lab_26,
+.lab_27,
+.lab_28,
+.lab_29,
+.lab_30 {
   display: none;
 }
 
