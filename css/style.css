@@ -269,6 +269,11 @@ body {
 
 }
 
+.content__menu-list.actve {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
 .content__menu-item:not(:last-child) {
   margin: 0px 15px 0px 0px;
 }
