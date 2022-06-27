@@ -159,7 +159,7 @@ async function getResponseSearch() {
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
 
-        }
+        } break;
     }
 
     // console.log(str);
