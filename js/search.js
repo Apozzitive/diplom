@@ -14,7 +14,7 @@ async function getResponseSearch() {
     let res = await fetch('https://diplomggkttid.herokuapp.com/search');
     let searchContent = await res.json();
     let valInp = '';
-    let non = document.querySelector('search__result-notfound');
+    let non = document.querySelector('.search__result-notfound');
     non.remove();
     valInp = document.querySelector('.search__input').value;
     let valueInput = valInp.toLowerCase();
