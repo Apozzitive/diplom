@@ -139,7 +139,7 @@ async function getResponseSearch() {
                                 </div>`;
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
-        } else if (valueInput == '' || valueInput == ' ') {
+        } /* else if (valueInput == '' || valueInput == ' ') {
             const notFound = "Ничего не найдено";
             const divSearchResult = document.createElement('div');
             divSearchResult.className = "search__result-result";
@@ -159,7 +159,7 @@ async function getResponseSearch() {
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
             return;
-        }
+        } */
     }
 
     // console.log(str);
