@@ -14,6 +14,8 @@ async function getResponseSearch() {
     let res = await fetch('https://diplomggkttid.herokuapp.com/search');
     let searchContent = await res.json();
     let valInp = '';
+    let non = document.querySelector('search__result-notfound');
+    non.remove();
     valInp = document.querySelector('.search__input').value;
     let valueInput = valInp.toLowerCase();
     for (let i = 0; i <= searchContent.values.length - 1; i++) {
@@ -149,7 +151,7 @@ async function getResponseSearch() {
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
             return; */
-        else {
+        /* else {
             const notFound = "Ничего не найдено";
             const divSearchResult = document.createElement('div');
             divSearchResult.className = "search__result-result";
@@ -159,7 +161,7 @@ async function getResponseSearch() {
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
             break;
-        }
+        } */
     }
 
     // console.log(str);

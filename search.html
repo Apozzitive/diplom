@@ -39,11 +39,13 @@
             <div class="container">
                 <h1 class="search__title">Результат поиска</h1>
                 <form class="form" action="https://diplomggkttid.herokuapp.com/search.html">
-                    <input class="search__input" id="search-txt" onsearch='window.location.reload()' name="input"
-                        type="search">
+                    <input class="search__input" id="search-txt" name="input" type="search">
                     <button class="search__button" id="search-btn" onclick='window.location.reload()'>Найти</button>
                 </form>
                 <section class="search__results">
+                    <div class="search__result-notfound">
+                        <p class="result__title-link" href="">Ничего не найдено</p>
+                    </div>
                 </section>
             </div>
         </main>
