@@ -158,8 +158,8 @@ async function getResponseSearch() {
                                     </div>`;
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
-
-        } break;
+            break;
+        }
     }
 
     // console.log(str);
