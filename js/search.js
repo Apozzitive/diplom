@@ -14,21 +14,10 @@ async function getResponseSearch() {
     let res = await fetch('https://diplomggkttid.herokuapp.com/search');
     let searchContent = await res.json();
     let valInp = '';
-    let str = searchContent.values[0].topic_content.split(' ');
-    console.log(str);
     valInp = document.querySelector('.search__input').value;
-    /* let valueInput = valInp.toLowerCase();
-    if (searchContent.values[0] === undefined || valInp == '' || valInp == ' ') {
-        const notFound = "Ничего не найдено";
-        const divSearchResult = document.createElement('div');
-        divSearchResult.className = "search__result-result";
-        divSearchResult.innerHTML = `<div class="search__result-notfound">
-                                        <p class="result__title-link" href="">${notFound}</p>
-                                    </div>`;
-        const resultElement = document.querySelector(".search__results");
-        resultElement.append(divSearchResult);
-    } else {
-        for (let i = 0; i <= searchContent.values.length - 1; i++) {
+    let valueInput = valInp.toLowerCase();
+    for (let i = 0; i <= searchContent.values.length - 1; i++) {
+        if (searchContent.values[i].topic_content.includes(valueInput)) {
             let title = searchContent.values[i].topic_title;
             let link = "";
             switch (title) {
@@ -150,6 +139,37 @@ async function getResponseSearch() {
                                 </div>`;
             const resultElement = document.querySelector(".search__results");
             resultElement.append(divSearchResult);
+        } else if (valueInpit == '' || valueInput == ' ') {
+            const notFound = "Ничего не найдено";
+            const divSearchResult = document.createElement('div');
+            divSearchResult.className = "search__result-result";
+            divSearchResult.innerHTML = `<div class="search__result-notfound">
+                                        <p class="result__title-link" href="">${notFound}</p>
+                                    </div>`;
+            const resultElement = document.querySelector(".search__results");
+            resultElement.append(divSearchResult);
+            return;
+        } else {
+            const notFound = "Ничего не найдено";
+            const divSearchResult = document.createElement('div');
+            divSearchResult.className = "search__result-result";
+            divSearchResult.innerHTML = `<div class="search__result-notfound">
+                                        <p class="result__title-link" href="">${notFound}</p>
+                                    </div>`;
+            const resultElement = document.querySelector(".search__results");
+            resultElement.append(divSearchResult);
+            return;
+        }
+    }
+
+    // console.log(str);
+
+    /* let valueInput = valInp.toLowerCase();
+    if (searchContent.values[0] === undefined || valInp == '' || valInp == ' ') {
+        
+    } else {
+        for (let i = 0; i <= searchContent.values.length - 1; i++) {
+            
         }
     } */
 }
